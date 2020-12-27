@@ -1,0 +1,39 @@
+.nav {
+    a, a:visited {
+        text-decoration: none;
+        color: #413f3d;
+        font-size: 1.25rem;
+    }
+    a:hover {
+        color: white;
+    }
+    .nav-bottom {
+        a {
+            transition: color 0.25s ease-in;
+            margin: .5em;
+            padding: .5em;
+        }
+        font-family: 'Muli';
+        bottom: 10%;
+        animation-fill-mode: forwards; 
+        animation: 2s ease-in-out 1 slideUp;
+    }
+    .nav-bottom, .nav-top {
+        position: absolute;
+        margin-left:auto;
+        margin-right: auto;
+        right: 0;
+        left: 0;
+    }
+    .nav-top {
+        a {
+            transition: color 0.25s ease-in;
+        }
+        font-family: 'Muli-Bold';
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        animation-fill-mode: forwards; 
+        animation: 2s ease-in-out 1 slideDown;
+    }
+}

@@ -1,0 +1,25 @@
+#Projects {
+    .project-content {
+        width:600px;
+        height:300px;
+        overflow:scroll;
+        overflow-x: hidden;
+        border: 1px solid  #413f3d;
+        border-radius: 5px;
+        @media (min-width: 1000px) {
+            width: 800px
+        }
+        @media (max-width: 600px) {
+            width:unset;
+            height: 400px;
+        }
+    }
+
+
+}
+body::-webkit-scrollbar-track {
+    background:black;
+  }
+html {
+    --scrollbarBG: white;
+}
