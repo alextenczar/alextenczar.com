@@ -7,7 +7,7 @@ function Home (props) {
         <div id="home-content">
         {
             (props.hover === '')
-            ? <>dadfasadfasdf</>
+            ? <></>
             : <p className="hover-item">{props.hover}</p>
         }
         </div>
