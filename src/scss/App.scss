@@ -9,17 +9,13 @@
     src: local('Muli Bold'), url('../components/fonts/muli/Mulish-Bold.ttf');
 }
 footer {
-    grid-area: 1 / 1 / 2 / 2;
 }
 header {
-    grid-area: 1 / 1 / 2 / 2;
 }
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #413f3d;
     margin-right: auto;
     margin-left: auto;
@@ -28,14 +24,19 @@ header {
     justify-content: center;
 
     .content-container {
-        grid-area: 2 / 1 / 3 / 2;
         margin: auto;
         font-family: 'Muli';
+        height: 70%;
     }
     #About, #Projects, #Contact {
         animation: 2s ease-in-out 1 fade;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 }
 body {
@@ -46,6 +47,7 @@ body {
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
 }
+
 @keyframes slideDown { 
     0% { top: -10%;  } 
     100% { top: 10%; } 
@@ -58,3 +60,13 @@ body {
     0% { opacity: 0;  } 
     100% { opacity: 1; } 
 }
+@media (max-height: 750px) {
+    @keyframes slideDown { 
+        0% { top: -5%;  } 
+        100% { top: 5%; } 
+    }
+    @keyframes slideUp { 
+        0% { bottom: -5%;  } 
+        100% { bottom: 5%; } 
+    }
+ }

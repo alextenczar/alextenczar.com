@@ -3,6 +3,9 @@
         padding-bottom: 2em;
     }
     width:300px;
+    @media(max-width:300px){
+        width: 100%;
+    }
     p, a {
         margin-bottom: .5em;
         margin-top: 0;
@@ -26,10 +29,12 @@
         width:100%;
         font-size: .9em;
         font-family:"Muli";
-        border: 0px solid #413f3d;
+        border: 1px solid #413f3d;
         border-bottom-color: #413f3d;
         border-bottom-width: 1px;
         background-color: transparent;
+        border-radius: 5px;
+        text-indent: .25em;
     }
     textarea.form-control{
         font-size: .9em;
@@ -41,6 +46,10 @@
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
+        text-indent: .25em;
+        @media (max-height: 750px) {
+            height: 6em;
+        }
     }
     button {
         font-family:"Muli";

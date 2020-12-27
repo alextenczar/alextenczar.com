@@ -36,4 +36,12 @@
         animation-fill-mode: forwards; 
         animation: 2s ease-in-out 1 slideDown;
     }
+    @media (max-height: 750px) {
+       .nav-bottom {
+           bottom: 5%
+       }
+       .nav-top {
+           top: 5%;
+       }
+    }
 }
