@@ -39,9 +39,11 @@
     @media (max-height: 750px) {
        .nav-bottom {
            bottom: 5%
+           animation: 2s ease-in-out 1 slideUp;
        }
        .nav-top {
            top: 5%;
+           animation: 2s ease-in-out 1 slideDown;
        }
     }
 }
