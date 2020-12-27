@@ -26,6 +26,10 @@ header {
     .content-container {
         margin: auto;
         font-family: 'Muli';
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%, -50%);
+        transform: translate(-50%, -50%);
         height: 70%;
     }
     #About, #Projects, #Contact {
@@ -37,6 +41,10 @@ header {
         top: 50%;
         -ms-transform: translateY(-50%, -50%);
         transform: translate(-50%, -50%);
+        height: 70%;
+        @media (max-height: 450px) {
+            height: 80%;
+        }
     }
 }
 body {

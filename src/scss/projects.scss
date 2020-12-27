@@ -1,7 +1,7 @@
 #Projects {
     .project-content {
         width:600px;
-        height:300px;
+        height:70%;
         overflow:scroll;
         overflow-x: hidden;
         border: 1px solid  #413f3d;
@@ -9,12 +9,14 @@
         @media (min-width: 1000px) {
             width: 800px
         }
-        @media (max-width: 600px) {
-            width:unset;
-            height: 400px;
-        }
     }
+    @media (max-width: 600px) {
+        .project-content {
+            width:99%;
+        }
+        width: 100%;
 
+    }
 
 }
 body::-webkit-scrollbar-track {

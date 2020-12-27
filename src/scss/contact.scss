@@ -1,4 +1,10 @@
 #Contact {
+    @media (max-height: 400px) {
+        height: 10% !important;
+        .form-group {
+            padding-bottom: 0;
+        }
+    }
     #message{
         padding-bottom: 2em;
     }
@@ -21,6 +27,11 @@
     }
     .form-group{
         padding-bottom: 1em;
+    }
+    #contact-form {
+        @media (max-height: 400px) {
+            display: none;
+        }
     }
     .form-control{
         color:  #413f3d;
