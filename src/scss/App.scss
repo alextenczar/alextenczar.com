@@ -19,6 +19,16 @@
     text-align: center;
     justify-content: center;
 
+    a, a:visited {
+        transition: color 0.25s ease-in;
+        color:  #413f3d;
+        font-family: "Muli-Bold";
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+
     .content-container {
         margin: auto;
         font-family: 'Muli';
