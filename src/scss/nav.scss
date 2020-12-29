@@ -1,4 +1,7 @@
 .nav {
+    .nav-item.selected {
+        color: white;
+    }
     a, a:visited {
         text-decoration: none;
         color: #413f3d;

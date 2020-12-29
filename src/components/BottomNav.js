@@ -1,6 +1,6 @@
 import '../scss/nav.scss';
 import React, {useState, Component} from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class BottomNav extends Component {
   update = (val) => {
@@ -11,9 +11,9 @@ class BottomNav extends Component {
       <>
         <nav className="nav">
           <div className="nav-bottom">
-            <Link to="/about" className="nav-item"  onMouseEnter={() => this.update('who am i?')} onMouseLeave={() => this.update('')}>about</Link>
-            <Link to="/projects" className="nav-item"onMouseEnter={() => this.update("things i've worked on.")} onMouseLeave={() => this.update('')}>projects</Link>
-            <Link to="/contact" className="nav-item"onMouseEnter={() => this.update('get in touch with me.')} onMouseLeave={() => this.update('')}>contact</Link>
+            <NavLink to="/about" className="nav-item" activeClassName="selected" onMouseEnter={() => this.update('who am i?')} onMouseLeave={() => this.update('')}>about</NavLink>
+            <NavLink to="/projects" className="nav-item" activeClassName="selected"onMouseEnter={() => this.update("things i've worked on.")} onMouseLeave={() => this.update('')}>projects</NavLink>
+            <NavLink to="/contact" className="nav-item" activeClassName="selected"onMouseEnter={() => this.update('get in touch with me.')} onMouseLeave={() => this.update('')}>contact</NavLink>
           </div>
         </nav>
       </>
