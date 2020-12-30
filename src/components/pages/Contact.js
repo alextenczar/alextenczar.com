@@ -8,26 +8,25 @@ class Contact extends Component {
             <div id="Contact">
                     <div id="message">
                     <p>i would love to hear from you!</p>
-                    <p><a href="mailto: alextenczar@gmail.com">email</a>, <a href="https://www.linkedin.com/in/alexander-tenczar/">linkedin</a>, <a href="https://github.com/alextenczar">github</a></p>
+                    <p><a href="https://www.linkedin.com/in/alexander-tenczar/">linkedin</a>, <a href="https://github.com/alextenczar">github</a></p>
                     
                 </div>
             
-                <form id="contact-form"  method="POST">
+                <form id="contact-form" action="https://formspree.io/f/mvovvlro" method="POST">
                     <div className="form-group">
-                        <input type="text" className="form-control" placeholder="name"/>
+                        <input type="text"  name="name" className="form-control" placeholder="name" required/>
                     </div>
                     <div className="form-group">
-                        <input type="email" className="form-control" aria-describedby="emailHelp" placeholder="email"/>
+                        <input type="email" name="_replyto" className="form-control" aria-describedby="emailHelp" placeholder="email" required/>
                     </div>
                     <div className="form-group">
-                        <textarea className="form-control" rows="10" placeholder="message"></textarea>
+                        <textarea className="form-control" name="message" rows="10" placeholder="message" required></textarea>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
         );
     }
-
 }
 
 export default Contact;

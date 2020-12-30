@@ -8,6 +8,14 @@
     font-style: normal;
     src: local('Muli Bold'), url('../components/fonts/muli/Mulish-Bold.ttf');
 }
+::selection {
+    color: white;
+    background: dimgray; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    color: white;
+    background: dimgray; /* Gecko Browsers */
+  }
 .wrapper {
     display: flex;
     align-items: center;
