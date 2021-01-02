@@ -1,14 +1,36 @@
-.nav {
-    .nav-item.selected {
-        color: white;
+@import 'colors';
+.light {
+    .nav {
+        .nav-item.selected {
+            color: $accent;
+        }
     }
     a, a:visited {
-        text-decoration: none;
-        color: #413f3d;
-        font-size: 1.25rem;
+        color: $text;
     }
     a:hover {
-        color: white;
+        color: $accent;
+    }
+    
+}
+.dark {
+    .nav {
+        .nav-item.selected {
+            color: $accent-dark;
+        }
+    }
+    a, a:visited {
+        color: $text-dark;
+    }
+    a:hover {
+        color: $accent-dark;
+    }
+    
+}
+.nav {
+    a, a:visited {
+        text-decoration: none;
+        font-size: 1.5rem;
     }
     .nav-bottom {
         a {

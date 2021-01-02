@@ -1,9 +1,15 @@
+@import 'colors';
+.light #Projects {
+    border: 2px solid $text;
+}
+.dark #Projects {
+    border: 2px solid $text-dark;
+}
 #Projects {
     height: 70%;
     width:600px;
     overflow:scroll;
     overflow-x: hidden;
-    border: 1px solid  #413f3d;
     border-radius: 5px;
     @media (min-width: 1000px) {
         width: 800px;
@@ -12,6 +18,9 @@
         & {
             width:98vw;
         }
+    }
+    p {
+        margin: .25em;
     }
 
 }

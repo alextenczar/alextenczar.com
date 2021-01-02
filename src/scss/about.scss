@@ -1,3 +1,4 @@
+@import 'colors';
 #About {
     overflow: hidden;
     display:flex;
@@ -16,12 +17,22 @@
         text-align: justify;
         line-height: 1.5;
     }
+    .dark #resume {
+        &:hover {
+            color: $accent-dark;
+            border-color: $text-dark;
+        }
+    }
+    .dark #resume {
+        &:hover {
+            color: $accent;
+            border-color: $text;
+        }
+    }
     #resume {
         padding: .1em .5em .35em .5em;
         &:hover {
             cursor: pointer;
-            color: white;
-            border-color: white;
         }
         #title {
             margin:0;

@@ -1,3 +1,5 @@
+@import 'colors';
+
 @font-face {
     font-family: 'Muli';
     font-style: normal;
@@ -8,19 +10,60 @@
     font-style: normal;
     src: local('Muli Bold'), url('../components/fonts/muli/Mulish-Bold.ttf');
 }
-::selection {
-    color: white;
-    background: dimgray; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-    color: white;
-    background: dimgray; /* Gecko Browsers */
-  }
+.dark {
+    ::selection {
+        color: $background-dark;
+        background: $accent-dark; /* WebKit/Blink Browsers */
+      }
+      ::-moz-selection {
+        color: $background-dark;
+        background: $accent-dark; /* Gecko Browsers */
+      }
+}
+.light {
+    ::selection {
+        color: $background;
+        background: $accent; /* WebKit/Blink Browsers */
+      }
+      ::-moz-selection {
+        color: $background;
+        background: $accent; /* Gecko Browsers */
+      }
+}
+
+.light {
+    body {
+        background-color: $background;
+    }
+    .wrapper {
+        color: $text;
+    }
+    a, a:visited {
+        color: $text;
+    }
+    a:hover {
+        color: $accent;
+    }
+}
+.dark {
+    body {
+        background-color: $background-dark;
+    }
+    .wrapper {
+        color: $text-dark;
+    }
+    a, a:visited {
+        color: $text-dark;
+    }
+    a:hover {
+        color: $accent-dark;
+    }
+}
+
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #413f3d;
     margin-right: auto;
     margin-left: auto;
     height:98vh;
@@ -29,12 +72,8 @@
 
     a, a:visited {
         transition: color 0.25s ease-in;
-        color:  #413f3d;
         font-family: "Muli-Bold";
         text-decoration: none;
-    }
-    a:hover {
-        color: white;
     }
 
     .content-container {
@@ -61,7 +100,6 @@
     }
 }
 body {
-    background-color: #d8cfd0;
     margin: 0;
     //height: 100vh;
     overflow: hidden;

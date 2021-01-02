@@ -1,3 +1,44 @@
+@import 'colors';
+.light #Contact {
+    .form-control{
+        color:  $text;
+    }
+    input.form-control{
+        border-bottom-color: $text;
+        border: 2px solid $text;
+    }
+    textarea.form-control{
+        border: 2px solid $text;
+    }
+    button {
+        color: $text;
+        border: 2px solid $text;
+        &:hover {
+            color: $accent;
+            border-color: $accent;
+        }
+    }
+}
+.dark #Contact {
+    .form-control{
+        color:  $text-dark;
+    }
+    input.form-control{
+        border-bottom-color: $text-dark;
+        border: 2px solid $text-dark;
+    }
+    textarea.form-control{
+        border: 2px solid $text-dark;
+    }
+    button {
+        color: $text-dark;
+        border: 2px solid $text-dark;
+        &:hover {
+            color: $accent-dark;
+            border-color: $accent-dark;
+        }
+    }
+}
 #Contact {
     @media (max-height: 400px) {
         height: 10% !important;
@@ -25,24 +66,18 @@
             display: none;
         }
     }
-    .form-control{
-        color:  #413f3d;
-    }
     input.form-control{
         width:100%;
-        font-size: .9em;
+        font-size: 1em;
         font-family:"Muli";
-        border: 1px solid #413f3d;
-        border-bottom-color: #413f3d;
         border-bottom-width: 1px;
         background-color: transparent;
         border-radius: 5px;
         text-indent: .25em;
     }
     textarea.form-control{
-        font-size: .9em;
+        font-size: 1em;
         font-family:"Muli";
-        border: 1px solid  #413f3d;
         width: 100%;
         background: transparent;
         resize: none;
@@ -59,16 +94,14 @@
         padding: .25em 2em;
         background-color: transparent;
         transition: color 0.25s ease-in, border-color 0.25s ease-in;
-
-        color: #413f3d;
-        border: 1px solid #413f3d;
+        color: $text;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
         &:hover {
             cursor: pointer;
-            color: white;
-            border-color: white;
+            color: $accent;
+            border-color: $accent;
         }
     }
 }

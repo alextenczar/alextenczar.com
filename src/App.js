@@ -19,7 +19,39 @@ class App extends Component{
         hover
       });
     };
+
+    returnThemeBasedOnTime(){
+      const root = document.documentElement
+      let date = new Date
+      const hour = date.getHours()
+      if(this.returnThemeBasedOnOS === undefined){
+        if (hour > 20 || hour < 5) {
+          root.classList.add('dark')
+          root.classList.remove('light')
+        }
+        else {
+          root.classList.add('light')
+          root.classList.remove('dark')
+        }
+      } 
+    }
+
+    returnThemeBasedOnOS() {
+      const root = document.documentElement
+      let pref = window.matchMedia('(prefers-color-scheme: dark)')
+      if (pref.matches) root.classList.add('dark')
+      else {
+        pref = window.matchMedia('(prefers-color-scheme: light)')
+        if (pref.matches) root.classList.add('light')
+        else return undefined
+      }
+    }
     
+    
+    componentDidMount() {
+      this.returnThemeBasedOnOS();
+      this.returnThemeBasedOnTime();
+    }
 
   render() {
     return (
