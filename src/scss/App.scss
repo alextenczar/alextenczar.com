@@ -11,6 +11,10 @@
     src: local('Muli Bold'), url('../components/fonts/muli/Mulish-Bold.ttf');
 }
 .dark {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
     ::selection {
         color: $background-dark;
         background: $accent-dark; /* WebKit/Blink Browsers */
@@ -74,6 +78,7 @@
         transition: color 0.25s ease-in;
         font-family: "Muli-Bold";
         text-decoration: none;
+        font-weight: bold;
     }
 
     .content-container {

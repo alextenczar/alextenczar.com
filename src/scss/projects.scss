@@ -11,6 +11,43 @@
     overflow:scroll;
     overflow-x: hidden;
     border-radius: 5px;
+    padding: .5em;
+    img {
+        cursor: -moz-zoom-in; 
+        cursor: -webkit-zoom-in; 
+        cursor: zoom-in;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Muli';
+    }
+    .project-link {
+        font-size: 1.5em;
+    }
+    p {
+        margin-top: 0;
+    }
+    .project {
+        align-items: center;
+        display: flex;
+        @media(min-width: 800px){
+            flex-direction: row;
+        }
+        @media(max-width: 600px){
+            flex-direction: column;
+        }
+        .project-text {
+            text-align: left;
+        }
+        .project-image {
+            img {
+                width: 300px;
+                height: auto;
+            }
+    
+        }
+    }
     @media (min-width: 1000px) {
         width: 800px;
     }
@@ -19,8 +56,4 @@
             width:98vw;
         }
     }
-    p {
-        margin: .25em;
-    }
-
 }

@@ -1,12 +1,49 @@
 import '../../scss/App.scss';
 import '../../scss/projects.scss';
+import { SRLWrapper } from "simple-react-lightbox";
+import djanoproject from '../../static/django-project.png';
+import cpproject from '../../static/cp-project.png';
+
+const options = {
+    buttons: {
+        showDownloadButton: false,
+        showAutoplayButton: false,
+        showFullscreenButton: false,
+        showThumbnailsButton: false,
+        showNextButton: false,
+        showPrevButton: false,
+    },
+    thumbnails: {
+        showThumbnails: false,
+    }
+};
 
 function Projects () {
     return (
+    <SRLWrapper options={options}>
         <div id="Projects">
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?""Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <div className="project">
+                <div className="project-text">
+                    <a href="https://github.com/alextenczar/3-julian-alex" className="project-link">Django Spreadsheet Web App</a>
+                    <p>A fellow classmate and I created a Django web app capable of importing a Microsoft Excel spreadsheet and populating various data models within a PostGreSQL database. The web app could then display the models and sort them by any attribute. The web app and database were eventually deployed to <a href="https://nhsee-team3.herokuapp.com/">Heroku</a> for remote access.</p>
+                    <p><strong>Technologies used:</strong> Django, Python, PostGreSQL, Heroku</p>
+                </div>
+                <div className="project-image">
+                    <img src={djanoproject}></img>
+                </div>
+            </div>
+            <div className="project">
+                <div className="project-text">
+                    <h2>React Front End for Drupal 8</h2>
+                    <p>During my internship at CommonPlaces Interactive, I built a React front end on top of their existing Drupal workflow with Create-React-App and GraphQL.</p>
+                    <p>Technologies used: React.js, Drupal 8, GraphQL, Docker, Storybook</p>
+                </div>
+                <div className="project-image">
+                    <img src={cpproject}></img>
+                </div>
+            </div>
         </div>
-
+        </SRLWrapper>
     )
 };
 

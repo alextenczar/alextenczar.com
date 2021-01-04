@@ -47,7 +47,6 @@ class App extends Component{
       }
     }
     
-    
     componentDidMount() {
       this.returnThemeBasedOnOS();
       this.returnThemeBasedOnTime();
