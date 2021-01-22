@@ -8,7 +8,7 @@ class Contact extends Component {
             <div id="Contact">
                     <div id="message">
                     <p>i would love to hear from you!</p>
-                    <p><a href="https://www.linkedin.com/in/alexander-tenczar/">linkedin</a>, <a href="https://github.com/alextenczar">github</a></p>
+                    <p><a href="https://www.linkedin.com/in/alexander-tenczar/" target="_blank" rel="noopener noreferrer">linkedin</a>, <a href="https://github.com/alextenczar" target="_blank" rel="noopener noreferrer">github</a></p>
                     
                 </div>
             
