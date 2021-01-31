@@ -7,12 +7,11 @@ class Contact extends Component {
         return (
             <div id="Contact">
                     <div id="message">
-                    <p>i would love to hear from you!</p>
                     <p><a href="https://www.linkedin.com/in/alexander-tenczar/" target="_blank" rel="noopener noreferrer">linkedin</a>, <a href="https://github.com/alextenczar" target="_blank" rel="noopener noreferrer">github</a></p>
-                    
+                    <p>i would love to hear from you!</p>
                 </div>
             
-                <form id="contact-form" action="https://formspree.io/f/mvovvlro" method="POST">
+                <form id="contact-form" action="https://formspree.io/f/mvovvlro" target="_blank" rel="noopener noreferrer" method="POST">
                     <div className="form-group">
                         <input type="text"  name="name" className="form-control" placeholder="name" required/>
                     </div>
@@ -22,7 +21,7 @@ class Contact extends Component {
                     <div className="form-group">
                         <textarea className="form-control" name="message" rows="10" placeholder="message" required></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-primary">submit</button>
                 </form>
             </div>
         );

@@ -25,7 +25,7 @@ function Projects () {
             <div className="project">
                 <div className="project-text">
                     <a href="https://github.com/alextenczar/3-julian-alex" className="project-link" target="_blank" rel="noopener noreferrer">Django Spreadsheet Web App</a>
-                    <p>A fellow classmate and I created a Django web app capable of importing a Microsoft Excel spreadsheet and populating various data models within a PostGreSQL database. The web app could then display the models and sort them by any attribute. The web app and database were eventually deployed to <a href="https://nhsee-team3.herokuapp.com/" target="_blank" rel="noopener noreferrer">Heroku</a> for remote access.</p>
+                    <p>A fellow classmate and I created a Django web app capable of importing a Microsoft Excel spreadsheet and populating various data models within a PostGreSQL database. The web app then displays the models and sorts them by any attribute. This web app and database were eventually deployed to <a href="https://nhsee-team3.herokuapp.com/" target="_blank" rel="noopener noreferrer">Heroku</a> for remote access.</p>
                     <p><strong>Technologies used:</strong> Django, Python, PostGreSQL, Heroku</p>
                 </div>
                 <div className="project-image">
