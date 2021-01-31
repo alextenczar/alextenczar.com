@@ -1,4 +1,5 @@
 @import 'colors';
+
 .light #Projects {
     border: 2px solid $text;
 }
@@ -24,6 +25,14 @@
     }
     .project-link {
         font-size: 1.5em;
+    }
+    .link-icon {
+        height: 1.1rem;
+        width: auto;
+    }
+    .non-link-title {
+        font-weight: bold;
+        font-family: "Muli-Bold";
     }
     p {
         margin-top: 0;
