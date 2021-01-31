@@ -39,7 +39,7 @@ class App extends Component{
     returnThemeBasedOnOS() {
       const root = document.documentElement
       let pref = window.matchMedia('(prefers-color-scheme: dark)')
-      if (pref.matches) root.classList.add('light')
+      if (pref.matches) root.classList.add('dark')
       else {
         pref = window.matchMedia('(prefers-color-scheme: light)')
         if (pref.matches) root.classList.add('light')
