@@ -65,4 +65,12 @@
             width:93vw;
         }
     }
+    @media (max-width: 500px) {
+        .non-link-title {
+            font-size: 1.3rem;
+        }
+        .project-link {
+            font-size: 1.3rem;
+        }
+    }
 }
