@@ -24,7 +24,7 @@ class App extends Component{
       const root = document.documentElement
       let date = new Date()
       const hour = date.getHours()
-      if(this.returnThemeBasedOnOS === undefined){
+      if(this.returnThemeBasedOnOS() === 'undefined' || this.returnThemeBasedOnOS() === 'light'){
         if (hour > 20 || hour < 5) {
           root.classList.add('dark')
           root.classList.remove('light')
@@ -34,21 +34,19 @@ class App extends Component{
           root.classList.remove('dark')
         }
       } 
-      else if(this.returnThemeBasedOnOS === 'light'){
+      else if(this.returnThemeBasedOnOS() === 'dark'){
         root.classList.add('dark')
         root.classList.remove('light')
       }
     }
 
     returnThemeBasedOnOS() {
-      const root = document.documentElement
       let pref = window.matchMedia('(prefers-color-scheme: dark)')
-      if (pref.matches) root.classList.add('dark')
+      if (pref.matches) return 'dark'
       else {
         pref = window.matchMedia('(prefers-color-scheme: light)')
-        if (pref.matches) 
-          return 'light'
-        else return undefined
+        if (pref.matches) return 'light'
+        else return 'undefined'
       }
     }
     
