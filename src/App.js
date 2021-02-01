@@ -24,8 +24,9 @@ class App extends Component{
       const root = document.documentElement
       let date = new Date()
       const hour = date.getHours()
+      console.log(hour);
       if(this.returnThemeBasedOnOS() === 'undefined' || this.returnThemeBasedOnOS() === 'light'){
-        if (hour > 20 || hour < 5) {
+        if (hour > 19 || hour < 5) {
           root.classList.add('dark')
           root.classList.remove('light')
         }
