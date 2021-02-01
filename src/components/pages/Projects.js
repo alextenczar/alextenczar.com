@@ -30,7 +30,7 @@ function Projects () {
                     <p><strong>Technologies used:</strong> Django, Python, PostGreSQL, Heroku</p>
                 </div>
                 <div className="project-image">
-                    <img src={djangoproject}></img>
+                    <img src={djangoproject} alt="Django Project"></img>
                 </div>
             </div>
             <div className="project">
@@ -40,7 +40,7 @@ function Projects () {
                     <p><strong>Technologies used: React.js, Drupal 8, GraphQL, Docker, Storybook</strong></p>
                 </div>
                 <div className="project-image">
-                    <img src={cpproject}></img>
+                    <img src={cpproject} alt="React Drupal Project"></img>
                 </div>
             </div>
         </div>

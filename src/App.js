@@ -22,7 +22,7 @@ class App extends Component{
 
     returnThemeBasedOnTime(){
       const root = document.documentElement
-      let date = new Date
+      let date = new Date()
       const hour = date.getHours()
       if(this.returnThemeBasedOnOS === undefined){
         if (hour > 20 || hour < 5) {
@@ -34,6 +34,10 @@ class App extends Component{
           root.classList.remove('dark')
         }
       } 
+      else if(this.returnThemeBasedOnOS === 'light'){
+        root.classList.add('dark')
+        root.classList.remove('light')
+      }
     }
 
     returnThemeBasedOnOS() {
@@ -42,7 +46,8 @@ class App extends Component{
       if (pref.matches) root.classList.add('dark')
       else {
         pref = window.matchMedia('(prefers-color-scheme: light)')
-        if (pref.matches) root.classList.add('light')
+        if (pref.matches) 
+          return 'light'
         else return undefined
       }
     }
