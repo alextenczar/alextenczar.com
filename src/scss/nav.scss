@@ -65,11 +65,11 @@
     @media (max-height: 750px) {
        .nav-bottom {
            bottom: 5%;
-           animation: 2s ease-in-out 1 slideUp;
+           animation: 1s ease-in-out 1 slideUp;
        }
        .nav-top {
            top: 5%;
-           animation: 2s ease-in-out 1 slideDown;
+           animation: 1s ease-in-out 1 slideDown;
        }
     }
 }

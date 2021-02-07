@@ -6,6 +6,10 @@ import djangoproject from '../../static/django-project.png';
 import cpproject from '../../static/cp-project.png';
 
 const options = {
+    settings: {
+        disableWheelControls: true,
+        disableKeyboardControls: true,
+    },
     caption: {
         showCaption: false,
     },
