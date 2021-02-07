@@ -6,6 +6,9 @@ import djangoproject from '../../static/django-project.png';
 import cpproject from '../../static/cp-project.png';
 
 const options = {
+    caption: {
+        showCaption: false,
+    },
     buttons: {
         showDownloadButton: false,
         showAutoplayButton: false,
