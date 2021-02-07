@@ -34,10 +34,13 @@
         font-size: 1.5rem;
     }
     .nav-bottom {
+        overflow: hidden;
+        white-space: nowrap;
         a {
+            display: inline-block;
             transition: color 0.25s ease-in;
-            margin: .5em;
-            padding: .5em;
+            margin: auto;
+            width: 110px;
         }
         font-family: 'Muli';
         bottom: 10%;
