@@ -6,6 +6,10 @@
 .dark #Projects {
     border: 2px solid $text-dark;
 }
+#project .project .project-image img,#bandviz_gif {
+    margin: .5em;
+    border-radius: 3px;
+}
 #Projects {
     height: 70%;
     width:600px;
@@ -53,6 +57,9 @@
             img {
                 width: 300px;
                 height: auto;
+                &#bandviz_gif {
+                    width: 284px;
+                }
             }
     
         }
