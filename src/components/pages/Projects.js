@@ -34,7 +34,7 @@ function Projects () {
         <div className="project">
                 <div className="project-text">
                     <a href="https://github.com/alextenczar/bandviz.com" className="project-link" target="_blank" rel="noopener noreferrer">BandViz.com - A Web Application for Visualizing Music Discovery <Linkicon className="link-icon"/></a>
-                    <p><strong>Recipient of UNHM MSIT Program's 2020-2021 Master’s Project Award.</strong><br></br> For my master's project I created a React web application that utilizes Last.fm and Spotify's APIs to visualize similar artists a user searches for. The project was deployed to <a href="https://www.bandviz.com" target="_blank" rel="noopener noreferrer">Vercel</a> to be accessed from any device.</p>
+                        <p><strong>Recipient of UNHM MSIT Program's 2020-2021 Master’s Project Award.</strong><br></br> For my master's project I created a React web application that utilizes Last.fm and Spotify's APIs to visualize musical artists similar to one a user searches for. The project was deployed to <a href="https://www.bandviz.com" target="_blank" rel="noopener noreferrer">Vercel</a> to be accessed from any device.</p>
                     <p><strong>Technologies used:</strong> React.js, D3.js, Axios, SASS, Vercel, RESTful APIs.</p>
                 </div>
                 <div className="project-image">
