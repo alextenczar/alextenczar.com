@@ -10,6 +10,9 @@
     font-style: normal;
     src: local('Muli Bold'), url('../components/fonts/muli/Mulish-Bold.ttf');
 }
+html,body{
+    -webkit-overflow-scrolling : touch !important;
+}
 :root {
     height: 100%;
 }
