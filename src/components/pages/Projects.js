@@ -4,6 +4,7 @@ import {ReactComponent as Linkicon} from '../../static/external-link.svg';
 import { SRLWrapper } from "simple-react-lightbox";
 import djangoproject from '../../static/django-project.png';
 import bandviz from '../../static/bandviz.gif';
+import tmc from '../../static/TMC.png';
 import cpproject from '../../static/cp-project.png';
 
 const options = {
@@ -39,6 +40,16 @@ function Projects () {
                 </div>
                 <div className="project-image">
                     <img id="bandviz_gif" src={bandviz} alt="BandViz.com"></img>
+                </div>
+            </div>
+            <div className="project">
+                <div className="project-text">
+                    <a href="https:tuftsmountainclub.org" className="project-link" target="_blank" rel="noopener noreferrer">TuftsMountainClub.org<Linkicon className="link-icon"/></a>
+                        <p>Tufts University's Mountain Club needed to transition their original Wix site to something with more functionality. I created a WordPress equilvalent site with user trip propsal/registration and admin approved sign-ups.</p>          
+                    <p><strong>Technologies used:</strong> WordPress, CSS, HTML, SMTP, PHP.</p>
+                </div>
+                <div className="project-image">
+                    <img id="tmc-image" src={tmc} alt="tuftsmountainclub.org"></img>
                 </div>
             </div>
             <div className="project">
