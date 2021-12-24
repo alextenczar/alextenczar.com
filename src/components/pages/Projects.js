@@ -45,7 +45,7 @@ function Projects () {
             <div className="project">
                 <div className="project-text">
                     <a href="https://tuftsmountainclub.org" className="project-link" target="_blank" rel="noopener noreferrer">TuftsMountainClub.org <Linkicon className="link-icon"/></a>
-                        <p>Tufts University's Mountain Club needed to transition their original Wix site to something with more functionality. I created a WordPress equilvalent site with user trip propsal/registration and admin approved sign-ups.</p>          
+                        <p>Tufts University's Mountain Club needed to transition their original Wix site to something with more functionality. I created a WordPress equivalent site with user trip proposal/registration and admin approved sign-ups.</p>          
                     <p><strong>Technologies used:</strong> WordPress, CSS, HTML, SMTP, PHP.</p>
                 </div>
                 <div className="project-image">
