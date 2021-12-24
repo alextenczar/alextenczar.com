@@ -4,19 +4,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "moment-timezone": "^0.5.33",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "moment-timezone": "^0.5.34",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-live-clock": "^5.2.0",
+    "react-live-clock": "^5.3.1",
     "react-moment": "^1.1.1",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
-    "sass": "^1.36.0",
-    "simple-react-lightbox": "^3.6.6",
-    "web-vitals": "^2.1.0"
+    "sass": "^1.45.1",
+    "simple-react-lightbox": "^3.6.8",
+    "web-vitals": "^2.1.2"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
